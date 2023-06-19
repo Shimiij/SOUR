@@ -1,0 +1,131 @@
+/*Site Banner + Buttons*/
+.banner {
+    background-color: white;
+    color: #333;
+    padding: 10px;
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+  }
+.BannerButton {
+    font-size: 15px;
+    font-family:'Times New Roman', Times, serif;
+    margin-left: 25px;
+    background-color: white;
+    border-color: white;
+}
+.BannerButton:hover {
+    /* Styles for hover effect */
+    color: red;
+  }
+.BanneButton:focus {
+    /* Styles for focus effect */
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+
+
+
+/*Main Intro Paragraph*/
+.MainText {
+    text-align: center;
+    width: 100%;
+    margin-top: 50px; 
+    font-size: 50px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+
+
+/*Search Textboxes*/
+.RSOSearchBox {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; 
+}
+.CATSearchBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px; 
+}
+.FACSearchBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px; 
+}
+/*Texbox Properties*/
+.centered-textbox {
+    width: 200px;
+}
+.TextBoxA {
+    padding-left: 20px; /* Adjust the value as needed */
+    text-indent: 20px; /* Adjust the value as needed */
+}
+input[type="text"] {
+    width: 50%;
+    height: 50px;
+    padding: 5px;
+    font-size: 22px;
+    border: 2px solid lightgray;
+    border-radius: 50px; 
+    background-color: lightgray;
+}
+.TextBoxA::placeholder {
+  font-family:'Times New Roman', Times, serif;
+  font-style: italic; 
+  font-size: 22px;
+  color: gray;
+  text-indent: 20px; 
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Vertically center align items */
+}
+
+
+
+
+/*Button + register an RSO below the Search Boxes*/
+.BelowSearch {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/*Search Button*/
+.buttonContainer {
+  height: 10px;
+  margin-top: 20px; 
+}
+.Search-Button {
+  background-image: url("../../../public/images/Button1.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  width: 75px; /* Adjust the width and height based on your image size */
+  height: 75px;
+  border: none; /* Optional: Remove the button border */
+  cursor: pointer; 
+  margin-right: 5px;
+}
+/*Register RSO Text*/
+.RegButton {
+  margin-right: 5px; /* Adjust the margin to reduce spacing */
+  margin-top: 80px;
+  background-color: white;
+  border-color: white;
+  font-size: 18px;
+  font-family:'Times New Roman', Times, serif;
+  text-align: center;
+  border-radius: 50px;
+}
+.RegButton:hover {
+    /* Styles for hover effect */
+    color: red;
+  }
