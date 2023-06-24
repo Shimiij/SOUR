@@ -20,9 +20,9 @@ function Main() {
                     University
             </button>
             <ul className={`dropdown-menu ${menuVisible ? "active" : ""}`}>
-                <li><a href="#">Menu Item 1</a></li>
-                <li><a href="#">Menu Item 2</a></li>
-                <li><a href="#">Menu Item 3</a></li>
+                <li><a href="#">Novi Sad</a></li>
+                <li><a href="#">Beograd</a></li>
+                <li><a href="#">Nis</a></li>
             </ul>
         </div>
 
