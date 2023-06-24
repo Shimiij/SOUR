@@ -1,12 +1,29 @@
+import React, { useState } from 'react';
 import "./main.css"
+//import {Link, Route, Routes} from "react-router-dom"
 
 function Main() {
-  return (
-        <>
+    
+    const [menuVisible, setMenuVisible] = useState(false);
 
-        <div className ="banner">
-            <button type="button" className="BannerButton"> University </button>
-            <button type="button" className="BannerButton"> Home </button>
+    const handleButtonClick = () => {
+        setMenuVisible(!menuVisible);
+    };    
+    
+    return (
+          <>
+        <div className="banner">
+            <button
+                type="button"
+                className={`BannerButton ${menuVisible ? "active" : ""}`}
+                onClick={handleButtonClick}>
+                    University
+            </button>
+            <ul className={`dropdown-menu ${menuVisible ? "active" : ""}`}>
+                <li><a href="#">Menu Item 1</a></li>
+                <li><a href="#">Menu Item 2</a></li>
+                <li><a href="#">Menu Item 3</a></li>
+            </ul>
         </div>
 
 
@@ -33,5 +50,11 @@ function Main() {
         </>
     );
 }
+
+
+
+/*
+
+*/
 
 export default Main;

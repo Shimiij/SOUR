@@ -1,0 +1,80 @@
+.TitleA {
+    margin-top: 200px;
+
+}
+
+
+/* Form alignment + General styling */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: Center;
+}
+.form > div {
+    margin-bottom: 20px;
+}
+.form label {
+    margin-bottom: 5px;
+}
+.form input,
+.form textarea {
+    padding: 5px;
+    align-items: flex-end;
+}
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+
+/* TextBox Properties */
+.formTextBoxB {
+    /* width: 40%;
+    height: 20px;
+    padding: 5px;
+    font-size: 22px;
+    border: 2px solid lightgray;
+    border-radius: 20px; 
+    background-color: lightgray; */
+}
+.EmailBoxText {
+/*  */
+
+}
+/* Does nothing to change the intial height of the textbox itself */
+.descriptionBoxText {
+    /* margin-top: 20px; */
+    height: 20px; /* Adjust the height value to your desired size */
+}
+.DescriptionBox textarea {
+    height: 20px; /* Adjust the height value to your desired size */
+}
+
+
+
+
+
+/* Individual Box Stylings */
+.EmailBox {
+    margin-top: 40px;
+
+}
+.OrgName {
+    margin-top: 40px;
+
+}
+.UploadBox {
+    margin-top: 40px;
+    
+}
+.DescriptionBox {
+    margin-top: 40px;
+
+}
+.SubmitButton {
+    margin-top: 20px;
+    
+}

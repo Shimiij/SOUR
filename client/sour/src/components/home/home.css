@@ -1,0 +1,39 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  
+  main {
+    padding: 32px;
+  }
+  
+  .hero {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+  
+  .features .feature {
+    flex-basis: 30%;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contact {
+    text-align: center;
+  }
+  
+  footer {
+    background-color: #f1f1f1;
+    padding: 16px;
+    text-align: center;
+  }

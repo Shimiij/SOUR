@@ -1,30 +1,34 @@
-/*Site Banner + Buttons*/
+/* main banner + button + functions*/
 .banner {
-    background-color: white;
-    color: #333;
-    padding: 10px;
-    text-align: left;
-    font-size: 15px;
-    font-weight: bold;
-    display: flex;
-    justify-content: left;
-    flex-direction: row;
-  }
-.BannerButton {
-    font-size: 15px;
-    font-family:'Times New Roman', Times, serif;
-    margin-left: 25px;
-    background-color: white;
-    border-color: white;
+  position: relative;
 }
-.BannerButton:hover {
-    /* Styles for hover effect */
-    color: red;
-  }
-.BanneButton:focus {
-    /* Styles for focus effect */
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+.BannerButton {
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  margin-left: 25px;
+  background-color: white;
+  border-color: white;
+}
+.BannerButton.active + .dropdown-menu,
+.dropdown-menu.active {
+  display: flex;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  flex-direction: row;
+  top: calc(100% + 5px);
+  left: 0;
+  background-color: white;
+  padding: 10px;
+  list-style-type: none;
+}
+.dropdown-menu li {
+  margin-right: 10px;
+}
+.dropdown-menu a {
+  text-decoration: none;
+  color: #333;
 }
 
 
@@ -36,8 +40,8 @@
     width: 100%;
     margin-top: 50px; 
     font-size: 50px;
-    font-family:'Times New Roman', Times, serif;
-}
+    font-family: 'Inter', sans-serif;
+  }
 
 
 
@@ -66,7 +70,7 @@
     padding-left: 20px; /* Adjust the value as needed */
     text-indent: 20px; /* Adjust the value as needed */
 }
-input[type="text"] {
+.TextBoxA[type="text"] {
     width: 50%;
     height: 50px;
     padding: 5px;
@@ -76,7 +80,7 @@ input[type="text"] {
     background-color: lightgray;
 }
 .TextBoxA::placeholder {
-  font-family:'Times New Roman', Times, serif;
+  font-family: 'Inter', sans-serif;
   font-style: italic; 
   font-size: 22px;
   color: gray;
@@ -89,9 +93,10 @@ input[type="text"] {
 
 
 
+
 /*Button + register an RSO below the Search Boxes*/
 .BelowSearch {
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,7 +105,7 @@ input[type="text"] {
 /*Search Button*/
 .buttonContainer {
   height: 10px;
-  margin-top: 20px; 
+  margin-top: 10px; 
 }
 .Search-Button {
   background-image: url("../../../public/images/Button1.png");
@@ -117,11 +122,11 @@ input[type="text"] {
 /*Register RSO Text*/
 .RegButton {
   margin-right: 5px; /* Adjust the margin to reduce spacing */
-  margin-top: 80px;
+  margin-top: 90px;
   background-color: white;
   border-color: white;
   font-size: 18px;
-  font-family:'Times New Roman', Times, serif;
+  font-family: 'Inter', sans-serif;
   text-align: center;
   border-radius: 50px;
 }

@@ -1,50 +1,62 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap%27); */
+
 body {
   margin: 0;
   padding: 0;
 }
 
-
-
-.MainPageContainer {
-  display: grid;
-  grid-template-columns: auto min-content 1fr; /* Add a min-content column for the vertical bar */
-  height: 100vh; /* Set a fixed height for the container */
-}
-.left-column {
-  background-color: white;
-  transition: width 0.3s ease;
-  overflow: hidden; /* Add this line to hide the content when collapsed */
-  width: 800px;
-}
-.right-column {
-  flex: 1; /* Fill remaining space in the container */
-  overflow-y: auto; /* Enable vertical scroll for the right column */
-  background-color: #FDDDE6;
-}
-
-
-
-
-.collapsed .left-column {
-  width: 0;
-  padding: 0; /* Add this line to remove padding when collapsed */
-
-}
-
-.vertical-bar {
-  background-color: #f1f1f1;
+/*Site Banner + Buttons*/
+.banner {
+  background-color: rgba(0, 0, 0, 0);
+  color: #333;
+  padding: 10px;
+  text-align: left;
+  font-size: 15px;
+  font-weight: bold;
   display: flex;
-  flex-direction: column; /* Set the flex direction to column */
-  align-items: center;
-  padding: 3px;
-  justify-content: center;
-  border-right: 1px solid #ccc; /* Add this line to add a right border */
-  border-left: 1px solid #ccc; /* Add this line to add a right border */
+  justify-content: left;
+  flex-direction: row;
+}
+.BannerButton {
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  margin-left: 25px;
+  background-color: white;
+  border-color: white;
+} 
+.BannerButton:hover {
+  /* Styles for hover effect */
+ color: red; 
 }
 
-.vertical-bar button {
-  writing-mode: vertical-rl; /* Rotate the button text vertically */
-  text-orientation: upright; /* Set the text orientation to upright */
-  padding: 1px; /* Adjust the padding as needed */
+
+
+
+nav ul {
+  list-style: none;
+
+  background-color: white;
+  color: #333;
+  padding: 1px;
+  text-align: left;
+  font-size: 15px;
+  /* font-weight: bold; */
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
 }
+nav ul li {
+  display: inline;
+  margin-left: 25px;
+}
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  margin-left: 25px;
+  background-color: white;
+  border-color: white;
+}
+
 

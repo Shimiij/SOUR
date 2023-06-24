@@ -1,44 +1,33 @@
 import './App.css';
-import React, { useState } from 'react';
 import Form from './components/form/form';
-/*import Front1 from "./components/front/front";*/
-import Main from "./components/main/main"
-import Rsolist from "./components/rsolist/rsolist"
+import Home from "./components/home/home";
+import Combinedfront from './components/combinedfront/combinedfront';
+import {Link, Route, Routes} from "react-router-dom";
+//import React, { useState } from 'react';
+//import Main from "./components/main/main";
+//import Rsolist from "./components/rsolist/rsolist";
 
 
 function App() {
-
-  const [isCollapsed, setIsCollapsed] = useState(false);
-
-  const handleCollapseToggle = () => {
-    setIsCollapsed(!isCollapsed);
-  };
-
-  const getButtonLabel = () => {
-    return isCollapsed ? '>>' : '<<';
-  };
-
   return (
-    <>
+  <>    
+    <nav >
+      <ul>
+        <li><Link to="/">Main</Link></li>
+        <li><Link to="/home">Home</Link></li>
+        <li><Link to="/form">Register</Link></li>
+      </ul>
+    </nav>
 
-<div className={`MainPageContainer ${isCollapsed ? 'collapsed' : ''}`}>
-      <div className={`left-column ${isCollapsed ? 'collapsed' : ''}`}>
-        <Main />
-      </div>
-      <div className="vertical-bar">
-        <button onClick={handleCollapseToggle}>
-          {getButtonLabel()}
-        </button>
-      </div>
-      <div className="right-column">
-        <div className='scrollable-content'>
-          <Rsolist />
-        </div>
-      </div>
-    </div>
-     
 
-    </>
+    <Routes>
+      <Route path="/" element={<Combinedfront/>}/>
+      <Route path="/home" element={<Home/>}/>
+      <Route path="/form" element={<Form/>}/>
+    </Routes>
+
+
+  </>
   );
 }
 
@@ -46,6 +35,9 @@ export default App;
 
 
 /* 
-<Front1/>
-<Form/>
+className ="banner"
+
+  <Combinedfront/>
+  <Form/>
+  <Home/>
 */
