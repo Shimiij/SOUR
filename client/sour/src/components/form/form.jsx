@@ -84,6 +84,7 @@ function Form() {
           className='formTextBoxB' //Class
           value={organizationName}
           onChange={handleOrganizationNameChange}
+          placeholder='organizationName'
           required
         />
       </div>

@@ -25,9 +25,18 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-between;
 }
 
-
+.Name, .EmailBox, .OrgName, .UploadBox, .DescriptionBox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 40px;
+}
+.UploadBox input{
+    width: 176px;
+}
 
 
 /* TextBox Properties */
@@ -56,24 +65,6 @@
 
 
 
-
-/* Individual Box Stylings */
-.EmailBox {
-    margin-top: 40px;
-
-}
-.OrgName {
-    margin-top: 40px;
-
-}
-.UploadBox {
-    margin-top: 40px;
-    
-}
-.DescriptionBox {
-    margin-top: 40px;
-
-}
 .SubmitButton {
     margin-top: 20px;
     

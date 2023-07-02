@@ -8,6 +8,10 @@
   margin-left: 25px;
   background-color: white;
   border-color: white;
+/* Removes button outline/shadow */
+  background: none;
+  border: none;
+  box-shadow: none;
 }
 .BannerButton.active + .dropdown-menu,
 .dropdown-menu.active {
@@ -121,16 +125,16 @@
   cursor: pointer; 
   margin-right: 5px;
 }
+
 /*Register RSO Text*/
 .RegButton {
   margin-right: 5px; /* Adjust the margin to reduce spacing */
   margin-top: 90px;
-  background-color: white;
-  border-color: white;
+  color: black;
   font-size: 18px;
   font-family: 'Inter', sans-serif;
   text-align: center;
-  border-radius: 50px;
+  text-decoration: none;
 }
 .RegButton:hover {
     /* Styles for hover effect */

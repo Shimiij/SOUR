@@ -1,6 +1,7 @@
 import './App.css';
-import Form from './components/form/form';
 import Home from "./components/home/home";
+import Form from "./components/form/form";
+import Register from "./components/register/register";
 import Combinedfront from './components/combinedfront/combinedfront';
 import {Link, Route, Routes} from "react-router-dom";
 //import React, { useState } from 'react';
@@ -11,11 +12,11 @@ import {Link, Route, Routes} from "react-router-dom";
 function App() {
   return (
   <>    
-    <nav >
+    <nav>
       <ul>
         <li><Link to="/">Main</Link></li>
         <li><Link to="/home">Home</Link></li>
-        <li><Link to="/form">Register</Link></li>
+        <li><Link to="/register">Register</Link></li>
       </ul>
     </nav>
 
@@ -23,9 +24,9 @@ function App() {
     <Routes>
       <Route path="/" element={<Combinedfront/>}/>
       <Route path="/home" element={<Home/>}/>
+      <Route path="/register" element={<Register/>}/>
       <Route path="/form" element={<Form/>}/>
     </Routes>
-
 
   </>
   );

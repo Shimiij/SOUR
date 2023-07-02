@@ -1,0 +1,80 @@
+.container {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card {
+    background: white;
+    width: 270px;
+    margin: 10px;
+    border-radius: 15px;
+    border: 2px solid gray; /* Add this line to add a black border */
+    margin-left: 50px;
+}
+.card-image {
+    background-color: lightblue;
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+
+
+
+
+
+
+.card-1 {
+    background-image: url('../../../public/images/MK.png');
+}
+.card-2 {
+    background-image: url('../../../public/images/MK.png');
+}
+.card-3 {
+    background-image: url('../../../public/images/MK.png');
+}
+
+
+
+.registerB {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+}
+
+
+
+
+.card h2 {
+    padding: 10px;
+    text-align: center;
+}
+.card p {
+    padding: 10px;
+}
+.card a {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+}
+.card:hover {
+   background-color: rgb(62, 62, 62);
+   color: white;
+   cursor: pointer;
+   transform: scale(1.03);
+   transition: all 1s ease; 
+   border-color: white; /* Add this line to change the border color on hover */
+}
+.card a:hover {
+    color: lightcoral;
+}
