@@ -10,7 +10,10 @@
   max-width: 1300px;
   height: 10vh;
   margin: 40px;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 5px;
   background-color: lightblue;
   display: flex;
   flex-direction: row;
@@ -23,6 +26,7 @@
    /* cursor: pointer;
    transform: scale(1.02); */
    box-shadow: 0 0 35px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.3);
+   cursor: pointer;
 }
 .RSO:not(:hover) {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.3);
@@ -30,24 +34,42 @@
 }
 
 
+.LogoParent {
+  height: 100%;
+  width: 100px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-right: 10px;
+}
 .Logo {
   background-image: url("../../../public/images/MK.png");
   background-size: cover;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin-right: 25px;
+  width: 100px;
+  height: 100px;
+  /* border-radius: 100px;
+  background-color: white; */
+  background-position: center;
 }
 
 .Title {
   margin-bottom: 5px;
+  font-family: 'Inter', sans-serif;
+
 }
 
 .Description {
   margin-top: 15px;
+  font-family: 'Inter', sans-serif;
+
 }
 
 .Title h4,
 .Description p {
   margin: 0;
+}
+
+
+.RSO:active {
+
 }

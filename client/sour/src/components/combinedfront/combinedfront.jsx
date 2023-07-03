@@ -23,18 +23,18 @@ function Combinedfront() {
       <div className={`left-column ${isCollapsed ? 'collapsed' : ''}`}>
         <Main /></div>
   
-          <div className="vertical-bar">
-            <button onClick={handleCollapseToggle}>
-              {getButtonLabel()}
-            </button>
-          </div>
-  
-          <div className="right-column">
-            <div className='scrollable-content'>
-            <Rsolist /></div>
-          </div>
+      <div className="vertical-bar">
+        <button onClick={handleCollapseToggle}>
+          {getButtonLabel()}
+        </button>
+      </div>
+
+      <div className="right-column">
+        <div className='scrollable-content'>
+        <Rsolist /></div>
+      </div>
+
     </div>
-  
     </>
     );
   }

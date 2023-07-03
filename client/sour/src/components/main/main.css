@@ -137,6 +137,14 @@
   border: none; /* Optional: Remove the button border */
   cursor: pointer; 
   margin-right: 5px;
+  transition: all 0.2s ease; 
+}
+.Search-Button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.Search-Button:not(:hover) {
+ transform: scale(1);
 }
 
 /*Register RSO Text*/
