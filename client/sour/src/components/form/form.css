@@ -1,6 +1,5 @@
 .TitleA {
     margin-top: 200px;
-
 }
 
 
@@ -26,6 +25,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    width: 350px;
 }
 
 .Name, .EmailBox, .OrgName, .UploadBox, .DescriptionBox {
@@ -35,7 +35,7 @@
     margin-top: 40px;
 }
 .UploadBox input{
-    width: 176px;
+    width: 155px;
 }
 
 

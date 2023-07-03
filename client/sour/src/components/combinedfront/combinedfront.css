@@ -7,7 +7,7 @@
     background-color: white;
     transition: width 0.3s ease;
     overflow: hidden; /* Add this line to hide the content when collapsed */
-    width: 800px;
+    width: 800px; /*FIX THIS FOR MOBILE COMPATIBILITY!!!!!!!*/
   }
   .right-column {
     flex: 1; /* Fill remaining space in the container */
