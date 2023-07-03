@@ -17,12 +17,16 @@
   align-items: flex-start;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.1s linear; 
 }
 .RSO:hover {
    /* cursor: pointer;
    transform: scale(1.02); */
-   transition: all 0.3s linear; 
    box-shadow: 0 0 35px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.RSO:not(:hover) {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1);
 }
 
 
