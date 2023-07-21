@@ -1,0 +1,62 @@
+.E1{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+
+
+
+.homecontainer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.homecard {
+    background: white;
+    width: 450px;
+    margin: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    border-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.homecard-banner {
+    background-color: rgb(252, 200, 75);
+    height: 45px;
+    padding-top: 5px;
+    background-size: cover;
+    /* border-radius: 5px 5px 0 0; */
+}
+
+
+
+
+
+.homecard h2 {
+    padding: 10px;
+    font-size: 18px;
+    text-align: left;
+    margin: 0px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.homecard p {
+    padding: 10px;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.homecard:hover {
+   cursor: pointer;
+   transition: all 0.5s ease; 
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.homecard:not(:hover) {
+    cursor: pointer;
+    transition: all 0.5s ease; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.1);
+ }

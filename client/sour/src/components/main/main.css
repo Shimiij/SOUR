@@ -4,6 +4,8 @@
 
 
 
+
+
 /* main banner + button + functions*/
 .banner {
   position: relative;
@@ -48,6 +50,9 @@
 
 
 
+
+
+
 /*Main Intro Paragraph*/
 .MainText {
     text-align: center;
@@ -61,6 +66,9 @@
   display: inline-block;
   vertical-align: middle;
 }
+
+
+
 
 
 
@@ -86,7 +94,6 @@
     width: 200px;
 }
 .TextBoxA {
-    padding-left: 20px; /* Adjust the value as needed */
     text-indent: 20px; /* Adjust the value as needed */
 }
 .TextBoxA[type="text"] {

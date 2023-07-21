@@ -1,44 +1,60 @@
 .MainPageContainer {
-    display: grid;
-    grid-template-columns: auto min-content 1fr; /* Add a min-content column for the vertical bar */
-    height: 100vh; /* Set a fixed height for the container */
+  display: grid;
+  grid-template-columns: auto min-content 1fr; /* Add a min-content column for the vertical bar */
+  height: 100vh; /* Set a fixed height for the container */
+}
+.left-column {
+  background-color: white;
+  transition: width 0.3s ease;
+  overflow: hidden; /* Add this line to hide the content when collapsed */
+  width: 800px; /*FIX THIS FOR MOBILE COMPATIBILITY!!!!!!!*/
+}
+.right-column {
+  flex: 1; /* Fill remaining space in the container */
+  overflow-y: auto; /* Enable vertical scroll for the right column */
+  /* background-color: #FDDDE6; */
+}
+
+
+
+
+.collapsed .left-column {
+  width: 0;
+  padding: 0; /* Add this line to remove padding when collapsed */
+
+}
+
+.vertical-bar {
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column; /* Set the flex direction to column */
+  align-items: center;
+  padding: 3px;
+  justify-content: center;
+  border-right: 1px solid #ccc; /* Add this line to add a right border */
+  border-left: 1px solid #ccc; /* Add this line to add a right border */
+}
+
+.vertical-bar button {
+  writing-mode: vertical-rl; /* Rotate the button text vertically */
+  text-orientation: upright; /* Set the text orientation to upright */
+  padding: 1px; /* Adjust the padding as needed */
+}
+
+
+
+
+@media (max-width:780px) {
+
+  .MainPageContainer {
+    height: 120vh;
   }
+
   .left-column {
-    background-color: white;
-    transition: width 0.3s ease;
-    overflow: hidden; /* Add this line to hide the content when collapsed */
-    width: 800px; /*FIX THIS FOR MOBILE COMPATIBILITY!!!!!!!*/
+    width: 94vw;
   }
-  .right-column {
-    flex: 1; /* Fill remaining space in the container */
-    overflow-y: auto; /* Enable vertical scroll for the right column */
-    /* background-color: #FDDDE6; */
-  }
-  
-  
-  
-  
-  .collapsed .left-column {
-    width: 0;
-    padding: 0; /* Add this line to remove padding when collapsed */
-  
-  }
-  
+
   .vertical-bar {
-    background-color: #f1f1f1;
-    display: flex;
-    flex-direction: column; /* Set the flex direction to column */
-    align-items: center;
-    padding: 3px;
-    justify-content: center;
-    border-right: 1px solid #ccc; /* Add this line to add a right border */
-    border-left: 1px solid #ccc; /* Add this line to add a right border */
+    width: 5vw;
   }
-  
-  .vertical-bar button {
-    writing-mode: vertical-rl; /* Rotate the button text vertically */
-    text-orientation: upright; /* Set the text orientation to upright */
-    padding: 1px; /* Adjust the padding as needed */
-  }
-  
-  
+}

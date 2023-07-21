@@ -9,7 +9,7 @@
   width: 80%;
   max-width: 1300px;
   height: 10vh;
-  margin: 40px;
+  margin: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 20px;
@@ -52,24 +52,48 @@
   background-position: center;
 }
 
+
+
+
+
 .Title {
   margin-bottom: 5px;
   font-family: 'Inter', sans-serif;
-
 }
-
 .Description {
   margin-top: 15px;
   font-family: 'Inter', sans-serif;
-
 }
-
 .Title h4,
 .Description p {
   margin: 0;
 }
 
 
-.RSO:active {
 
+
+
+
+.LoadButtonContainer {
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.LoadButton {
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  white-space: nowrap;
+
+  padding: 10px 15px;
+  border-radius: 2px;
+  background-color: white;
+  border-color: darkblue;
+  border-width: 1px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.1);   
+  cursor: pointer;
+}
+
+.LoadButton:hover {
+  cursor: pointer;
 }

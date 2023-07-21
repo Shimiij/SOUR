@@ -34,10 +34,11 @@ function Rsolist() {
                 </div>
             </div>
 
-
+        <div className='LoadButtonContainer'>
+            <button className='LoadButton'>LOAD MORE</button>
+        </div>
 
     </div>
-
     
     </>
   );
