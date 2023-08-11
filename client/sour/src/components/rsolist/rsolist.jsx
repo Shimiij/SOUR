@@ -33,7 +33,7 @@ function Rsolist() {
                     </div>
                     <div className='RsoText'>
                         <div className="Title">
-                            <h4>{val.Name}</h4></div>
+                            <h4>{val.Organization_Name}</h4></div>
 
                         <div className="Description">
                             <p>{val.Description}</p></div>
