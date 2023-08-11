@@ -1,0 +1,159 @@
+[debug] [2023-08-11T16:42:49.676Z] ----------------------------------------------------------------------
+[debug] [2023-08-11T16:42:49.679Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Milosh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-08-11T16:42:49.679Z] CLI Version:   12.4.7
+[debug] [2023-08-11T16:42:49.680Z] Platform:      win32
+[debug] [2023-08-11T16:42:49.680Z] Node Version:  v18.16.0
+[debug] [2023-08-11T16:42:49.682Z] Time:          Fri Aug 11 2023 18:42:49 GMT+0200 (Central European Summer Time)
+[debug] [2023-08-11T16:42:49.682Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-11T16:42:49.692Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-11T16:42:49.693Z] > authorizing via signed-in user (supr.kontakt@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Milosh\Desktop\Coding\SOUR\client\sour
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-08-11T16:44:37.627Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-08-11T16:44:38.785Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-08-11T16:44:38.785Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project sour-a4806 (SOUR) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-08-11T16:45:07.706Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/sour-a4806/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-08-11T16:45:07.706Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/sour-a4806/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/sour-a4806
+[debug] [2023-08-11T16:45:09.196Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/sour-a4806/services/firebasedatabase.googleapis.com 200
+[debug] [2023-08-11T16:45:09.196Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/sour-a4806/services/firebasedatabase.googleapis.com [omitted]
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2023-08-11T16:45:09.198Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/sour-a4806/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2023-08-11T16:45:09.199Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/sour-a4806/services/firebasedatabase.googleapis.com:enable x-goog-quota-user=projects/sour-a4806
+[debug] [2023-08-11T16:45:10.882Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/sour-a4806/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2023-08-11T16:45:10.882Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/sour-a4806/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2023-08-11T16:45:20.899Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/sour-a4806/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-08-11T16:45:20.899Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/sour-a4806/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/sour-a4806
+[debug] [2023-08-11T16:45:22.351Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/sour-a4806/services/firebasedatabase.googleapis.com 200
+[debug] [2023-08-11T16:45:22.351Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/sour-a4806/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-08-11T16:45:22.362Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sour-a4806 [none]
+[debug] [2023-08-11T16:45:22.816Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sour-a4806 200
+[debug] [2023-08-11T16:45:22.817Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sour-a4806 {"projectId":"sour-a4806","projectNumber":"833372325953","displayName":"SOUR","name":"projects/sour-a4806","resources":{"hostingSite":"sour-a4806","storageBucket":"sour-a4806.appspot.com","locationId":"europe-west"},"state":"ACTIVE","etag":"1_e1efda1f-0076-4896-b328-7bbc882b3075"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[info] +  Default rules have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2023-08-11T16:45:55.772Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/sour-a4806/services/firestore.googleapis.com [none]
+[debug] [2023-08-11T16:45:55.772Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/sour-a4806/services/firestore.googleapis.com x-goog-quota-user=projects/sour-a4806
+[debug] [2023-08-11T16:45:57.167Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/sour-a4806/services/firestore.googleapis.com 200
+[debug] [2023-08-11T16:45:57.167Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/sour-a4806/services/firestore.googleapis.com [omitted]
+[debug] [2023-08-11T16:45:57.168Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/sour-a4806/databases/(default) [none]
+[debug] [2023-08-11T16:45:57.698Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/sour-a4806/databases/(default) 200
+[debug] [2023-08-11T16:45:57.698Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/sour-a4806/databases/(default) {"name":"projects/sour-a4806/databases/(default)","uid":"f6d43062-9bb8-455a-b5a2-74b3d16c4996","createTime":"2023-08-11T15:09:18.742296Z","updateTime":"2023-08-11T15:09:18.742296Z","locationId":"eur3","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2023-08-11T15:45:57.094922Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"e","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IJzXipOH1YADMKCSj5/71IAD"}
+[debug] [2023-08-11T16:45:57.698Z] database_type: FIRESTORE_NATIVE
+[debug] [2023-08-11T16:45:57.699Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-11T16:45:57.699Z] > authorizing via signed-in user (supr.kontakt@gmail.com)
+[debug] [2023-08-11T16:45:57.699Z] [iam] checking project sour-a4806 for permissions ["firebase.projects.get"]
+[debug] [2023-08-11T16:45:57.700Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sour-a4806:testIamPermissions [none]
+[debug] [2023-08-11T16:45:57.700Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/sour-a4806:testIamPermissions x-goog-quota-user=projects/sour-a4806
+[debug] [2023-08-11T16:45:57.701Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sour-a4806:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-08-11T16:45:58.948Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sour-a4806:testIamPermissions 200
+[debug] [2023-08-11T16:45:58.948Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sour-a4806:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-08-11T16:46:08.184Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/sour-a4806/releases pageSize=10&pageToken=
+[debug] [2023-08-11T16:46:08.898Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/sour-a4806/releases 200
+[debug] [2023-08-11T16:46:08.898Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/sour-a4806/releases {"releases":[{"name":"projects/sour-a4806/releases/cloud.firestore","rulesetName":"projects/sour-a4806/rulesets/34170bb5-b454-479f-9b1b-5b9e978bfec8","createTime":"2023-08-11T15:09:23.439660Z","updateTime":"2023-08-11T15:10:00.628889Z"},{"name":"projects/sour-a4806/releases/firebase.storage/sour-a4806.appspot.com","rulesetName":"projects/sour-a4806/rulesets/75be0467-538a-4982-b734-2343634c1554","createTime":"2023-08-11T15:10:44.123657Z","updateTime":"2023-08-11T15:11:29.503430Z"}]}
+[debug] [2023-08-11T16:46:08.920Z] Found ruleset: projects/sour-a4806/rulesets/34170bb5-b454-479f-9b1b-5b9e978bfec8
+[debug] [2023-08-11T16:46:08.920Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/sour-a4806/rulesets/34170bb5-b454-479f-9b1b-5b9e978bfec8 [none]
+[debug] [2023-08-11T16:46:09.982Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/sour-a4806/rulesets/34170bb5-b454-479f-9b1b-5b9e978bfec8 200
+[debug] [2023-08-11T16:46:09.982Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/sour-a4806/rulesets/34170bb5-b454-479f-9b1b-5b9e978bfec8 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-08-11T16:46:16.312Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/sour-a4806/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2023-08-11T16:46:16.315Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/sour-a4806/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2023-08-11T16:46:17.161Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/sour-a4806/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2023-08-11T16:46:17.161Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/sour-a4806/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/sour-a4806/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[debug] [2023-08-11T16:46:17.166Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/sour-a4806/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2023-08-11T16:46:17.166Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/sour-a4806/databases/(default)/collectionGroups/-/indexes {}
+[info] 
+=== Functions Setup
+[debug] [2023-08-11T16:46:17.171Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-11T16:46:17.171Z] > authorizing via signed-in user (supr.kontakt@gmail.com)
+[debug] [2023-08-11T16:46:17.171Z] [iam] checking project sour-a4806 for permissions ["firebase.projects.get"]
+[debug] [2023-08-11T16:46:17.172Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sour-a4806:testIamPermissions [none]
+[debug] [2023-08-11T16:46:17.172Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/sour-a4806:testIamPermissions x-goog-quota-user=projects/sour-a4806
+[debug] [2023-08-11T16:46:17.172Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sour-a4806:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-08-11T16:46:18.151Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sour-a4806:testIamPermissions 200
+[debug] [2023-08-11T16:46:18.151Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sour-a4806:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-08-11T16:46:18.152Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/sour-a4806/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-08-11T16:46:18.152Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/sour-a4806/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/sour-a4806
+[debug] [2023-08-11T16:46:18.155Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/sour-a4806/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-08-11T16:46:18.155Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/sour-a4806/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/sour-a4806
+[debug] [2023-08-11T16:46:19.321Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/sour-a4806/services/runtimeconfig.googleapis.com 200
+[debug] [2023-08-11T16:46:19.321Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/sour-a4806/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-08-11T16:46:19.325Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/sour-a4806/services/cloudfunctions.googleapis.com 200
+[debug] [2023-08-11T16:46:19.325Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/sour-a4806/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2023-08-11T16:46:19.325Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/sour-a4806/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2023-08-11T16:46:19.326Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/sour-a4806/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/sour-a4806
+[debug] [2023-08-11T16:46:21.584Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/sour-a4806/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2023-08-11T16:46:21.584Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/sour-a4806/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2023-08-11T16:46:31.599Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/sour-a4806/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-08-11T16:46:31.599Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/sour-a4806/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/sour-a4806
+[debug] [2023-08-11T16:46:32.773Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/sour-a4806/services/cloudfunctions.googleapis.com 200
+[debug] [2023-08-11T16:46:32.773Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/sour-a4806/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-08-11T16:49:13.032Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-08-11T16:49:13.450Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-08-11T16:49:13.450Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.1.0","browserURL":"https://www.gstatic.com/firebasejs/10.1.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.1.0/firebase.tgz"},"live":{"version":"10.1","browserURL":"https://www.gstatic.com/firebasejs/live/10.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.1/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.1.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.1.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.1.0/firebase-auth/cordova.js","functions":"https://www.gstatic.com/firebasejs/10.1.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.1.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.1.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.1.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.1.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.1.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.1.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.1.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.memory.js"}}
+[info] i  Skipping write of public/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\Milosh\Desktop\Coding\SOUR 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=132475187&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...

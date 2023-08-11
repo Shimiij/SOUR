@@ -87,3 +87,12 @@
 .card a:hover {
     color: lightcoral;
 }
+
+
+
+@media (max-width: 500px) {
+    .card {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}

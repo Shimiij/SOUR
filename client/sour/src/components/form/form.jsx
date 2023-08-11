@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import "./form.css"
+import { uploadPDFAndGetURL } from '../../firebase/Firebase';
+import { createFileName } from '../../firebase/Firebase';
+import { addDoc } from 'firebase/firestore';
+import { rsoCollectionRef } from '../../firebase/Firebase';
 
 
 function Form() {
@@ -19,6 +23,24 @@ function Form() {
       logo,
       description,
     });
+    alert('RSO submitted for review');
+    const filename = createFileName(logo);
+    uploadPDFAndGetURL(logo, filename).then((val) => {
+      console.log(val)
+      const data = {
+        Name: name,
+        Email: email,
+        Organization_Name: organizationName,
+        Logo: val,
+        Description: description
+      }
+      const createRSO = async () => {
+        await addDoc(rsoCollectionRef, data) // this will also upload the data to Firestore Database (NOT CLOUD STORAGE)
+      }
+
+      createRSO()
+    })
+
     setName('');
     setEmail('');
     setOrganizationName('');

@@ -5,6 +5,10 @@
 }
 
 
+
+
+
+
 .RSO {
   width: 80%;
   max-width: 1300px;
@@ -34,6 +38,9 @@
 }
 
 
+
+
+
 .LogoParent {
   height: 100%;
   width: 100px;
@@ -51,6 +58,7 @@
   background-color: white; */
   background-position: center;
 }
+
 
 
 
@@ -92,8 +100,8 @@
   border-width: 1px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.1);   
   cursor: pointer;
+  outline: none;
 }
-
 .LoadButton:hover {
   cursor: pointer;
 }
