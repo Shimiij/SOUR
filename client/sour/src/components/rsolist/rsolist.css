@@ -84,23 +84,19 @@
 
 .LoadButtonContainer {
   margin-top: 40px;
-  margin-left: 20px;
+  /* margin-left: 50px; */
 }
-
 .LoadButton {
-  font-size: 15px;
-  font-family: 'Inter', sans-serif;
   text-align: center;
   white-space: nowrap;
-
+  font-size: 15px;
   padding: 10px 15px;
+  margin-left: 9px;
   border-radius: 2px;
   background-color: white;
   border-color: darkblue;
   border-width: 1px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.1);   
   cursor: pointer;
-  outline: none;
 }
 .LoadButton:hover {
   cursor: pointer;

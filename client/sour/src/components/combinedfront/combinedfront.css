@@ -47,11 +47,11 @@
 @media (max-width:780px) {
 
   .MainPageContainer {
-    height: 120vh;
+    height: 100vh;
   }
 
   .left-column {
-    width: 94vw;
+    width: 93vw;
   }
 
   .vertical-bar {

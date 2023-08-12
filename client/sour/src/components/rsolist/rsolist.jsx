@@ -21,35 +21,36 @@ function Rsolist() {
   return (
     <>
     <div className="rso-list"> 
-        
     {
-        rso !== undefined && rso !== "" ? 
-        rso.map((val) => {
-            return (
-                <>
-                <div className="RSO">
-                    <div className='LogoParent'>
-                        <img src={val.Logo} width={100} height={100} />
-                    </div>
-                    <div className='RsoText'>
-                        <div className="Title">
-                            <h4>{val.Organization_Name}</h4></div>
-
-                        <div className="Description">
-                            <p>{val.Description}</p></div>
-                    </div> 
+    rso !== undefined && rso !== "" ? 
+    rso.map((val) => {
+        return (
+            <>
+            <div className="RSO">
+                <div className='LogoParent'>
+                    <img src={val.Logo} width={100} height={100} />
                 </div>
-                </>
-            )
-        })
-        : <></>
+                <div className='RsoText'>
+                    <div className="Title">
+                        <h4>{val.Organization_Name}</h4></div>
 
-        
-    }
-            
+                    <div className="Description">
+                        <p>{val.Description}</p></div>
+                </div> 
+            </div>
+            </>
+        )
+    })
+    : <></>
+    }     
+
+    <div className='LoadButtonContainer'>
+        <button className='LoadButton'>LOAD MORE</button>
+    </div>
 
     </div>
-    
+
+
     </>
   );
 }
