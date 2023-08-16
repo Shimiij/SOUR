@@ -1,11 +1,10 @@
 .MainPageContainer {
   display: grid;
   grid-template-columns: auto min-content 1fr; /* Add a min-content column for the vertical bar */
-  height: 100vh; /* Set a fixed height for the container */
 }
 .left-column {
   background-color: white;
-  transition: width 0.3s ease;
+  transition: width 1s ease;
   overflow: hidden; /* Add this line to hide the content when collapsed */
   width: 800px; /*FIX THIS FOR MOBILE COMPATIBILITY!!!!!!!*/
 }

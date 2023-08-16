@@ -1,0 +1,90 @@
+/* Top of Page */
+.A1 p{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+
+
+/* RSO Check List */
+.rso-list-check {
+    display: flex;
+    /* align-items: flex-end; */
+    flex-direction: column;
+    margin-top: 100px;
+    margin-right: 10% ;
+}
+
+
+
+/* RSO Check Boxes */
+.RSO-c {
+    width: 50%; /* 40% */
+    max-width: 1300px;
+    height: 10vh;
+    margin: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 5px;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.1s linear; 
+}
+.RSO-c:hover {
+    /* cursor: pointer;
+    transform: scale(1.02); */
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.RSO-c:not(:hover) {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1);
+}
+.LogoParent-c {
+    height: 100%;
+    width: 100px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-right: 10px;
+}
+.Logo-c {
+    background-image: url("../../../public/images/MK.png");
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    /* border-radius: 100px;
+    background-color: white; */
+    background-position: center;
+}
+.Title-c {
+    margin-bottom: 5px;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.Description-c {
+    margin-top: 15px;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.Title-c h4,
+.Description-c p {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+@media (max-width:780px) {
+    
+    
+}

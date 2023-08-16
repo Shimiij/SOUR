@@ -58,12 +58,6 @@
   background-color: white; */
   background-position: center;
 }
-
-
-
-
-
-
 .Title {
   margin-bottom: 5px;
   font-family: 'Inter', sans-serif;
@@ -72,7 +66,10 @@
   margin-top: 15px;
   font-family: 'Inter', sans-serif;
 }
-.Title h4,
+.Title h4 {
+  margin: 0;
+  white-space: nowrap;
+}
 .Description p {
   margin: 0;
 }
@@ -101,3 +98,4 @@
 .LoadButton:hover {
   cursor: pointer;
 }
+

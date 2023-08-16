@@ -12,9 +12,9 @@ return (
             
             <div className='card'>
                 <div className='card-image card-3'></div>
-                <h2>Sign In</h2>
-                <p>Sign in to be able to view all affiliated groups, reserve your spot in events and ___</p>
-                <a href="">Sign In</a>
+                <h2>Sign Up</h2>
+                <p>Sign up to be able to view all affiliated groups, reserve your spot in events and ___</p>
+                <a href="/register">Sign In</a>
             </div>
 
             <div className='card'>

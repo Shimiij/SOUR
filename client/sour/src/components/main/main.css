@@ -173,6 +173,7 @@
   display: inline-block;
   vertical-align: middle;
   white-space: nowrap; /* Prevent text from wrapping */
+  margin-bottom: 50px;
 }
 .RegButton:hover {
     /* Styles for hover effect */
