@@ -41,6 +41,10 @@
 
 
 
+
+.RsoText {
+  height: 100%;
+}
 .LogoParent {
   height: 100%;
   width: 100px;
@@ -61,10 +65,12 @@
 .Title {
   margin-bottom: 5px;
   font-family: 'Inter', sans-serif;
+  height: calc(22% - 5px);
 }
 .Description {
-  margin-top: 15px;
+  margin-top: 10px;
   font-family: 'Inter', sans-serif;
+  height: calc(78% - 10px);
 }
 .Title h4 {
   margin: 0;
@@ -72,6 +78,13 @@
 }
 .Description p {
   margin: 0;
+  width: 100%; /* Set a fixed width for the container */
+  white-space: normal; /* Allow text to wrap within the container */
+  overflow: hidden; /* Hide any content that overflows the container */
+  display: -webkit-box; /* Create multi-line layout */
+  -webkit-box-orient: vertical; /* Vertical layout of lines */
+  max-height: 3.6em; /* Approximate height for 2 lines of text */
+  text-overflow: ellipsis; /* Display an ellipsis (...) when content overflows */
 }
 
 
