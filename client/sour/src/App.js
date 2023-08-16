@@ -6,7 +6,6 @@ import Combinedfront from './components/combinedfront/combinedfront';
 import Profile from "./components/profile/profile";
 import Admin from "./components/admin/admin";
 import { Link, Route, Routes, NavLink} from "react-router-dom";
-import styled from 'styled-components';
 import React, { useState } from 'react';
 
 
@@ -16,9 +15,9 @@ function App() {
   <>    
     <nav className='NavBar'>
       <ul>
-        <li><NavLink to="/"         activeClassName="active-link" className='Navlink'>Main    </NavLink></li>
-        <li><NavLink to="/home"     activeClassName="active-link" className='Navlink'>Home    </NavLink></li>
-        <li><NavLink to="/register" activeClassName="active-link" className='Navlink'>Register</NavLink></li>
+        <li><NavLink to="/"         className='Navlink'>Main    </NavLink></li>
+        <li><NavLink to="/home"     className='Navlink'>Home    </NavLink></li>
+        <li><NavLink to="/register" className='Navlink'>Register</NavLink></li>
 
       </ul>
     </nav>
